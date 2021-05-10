@@ -1,29 +1,38 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+
 body{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+   text-align: center;
+   font-family:  'Open Sans',sans-serif;
 }
 .nav-bar{
     display:flex;
     background-color: rgb(0, 0, 0);
-    justify-content:flex-start;
+    justify-content:center;
     padding: 1%;
     flex-wrap: wrap;
-    
+    width: 100%;
+
 }
-.image{
+.image-one{
  margin: 0px 350px;
-    width: auto;
+    flex-basis: fill;
+    flex-shrink: 10;
+
 }
 .item{
-    padding: 10px 20px;
+    padding: 10px 15px;
     text-decoration: none;
     color: white;
 }
 .section{
-    width: 100%;
+    width: 100vw;
     height: 500px;
-    padding: 40px 60px;
+  
     text-align: center;
     color: white;
     font-family: serif;
@@ -55,28 +64,43 @@ body{
 
 .part-one{
     height: 60vh;
-    background-image: url(/images/radiant-wheel.jpg);
+    background-image: url(/images/cropped\ distant\ carnival.jpg);
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;
-
+   padding: 20px;
+  
 }
 .header-heading{
     background-color: rgba(0, 128, 0, 0.384);
-  
+  margin: 100px;
+  border-radius: 10px;
+ 
+}
+.image{
+    height: auto;
+    width: 100%;
 }
 .part-two{
     height: 60vh;
-    background-image: url(./images/carnival-horses.jpg);
+    background-image: url(./images/duo-cropped-carnival-horses.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: rgb(69, 28, 163);
     text-align: right;
     padding: 100px 0px;
-    margin: 100px;
     margin-top: 8%;
     width: auto;
 }
 .part-three{
-    background-color: rgb(0, 47, 255);
+    perspective: 1000px;
+    height: 800px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+}
+.card{
+    position: relative;
+background-color: rgb(31, 94, 75);
+margin: 20px;
 }
