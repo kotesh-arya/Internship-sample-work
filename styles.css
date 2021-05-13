@@ -5,7 +5,7 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -99,11 +99,12 @@ body {
 }
 
 .part-three {
+    text-align: center;
     height: 650px;
-    padding: 100px;
+    padding: 40px;
     display: grid;
-    grid-gap: 90px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(370px,1fr));
     grid-template-rows: repeat(2, 300px);
 }
 
@@ -111,7 +112,7 @@ body {
    
     position: relative;
    
-    width: 340px;
+    width: 370px;
     height: 280px;
  
 }
@@ -124,7 +125,7 @@ body {
     width: 100%;
     backface-visibility: hidden;
     position: absolute;
-    transition: transform .6s linear;
+    transition: transform .7s linear;
     text-align: center;
     display: flex;
   align-items: center;
@@ -143,6 +144,7 @@ body {
     text-align: center;
     background-color: rgb(70, 22, 22);
     transform: perspective(600px) rotateY(180deg);
+    box-shadow: 10px 10px 15px solid black;
 }
 
 .back-content {
