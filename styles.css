@@ -34,10 +34,10 @@ body {
 
 .section {
 
-    height: 500px;
+   
 
     text-align: center;
-    color: white;
+    color: black;
     font-family: serif;
 }
 
@@ -66,7 +66,7 @@ body {
 
 
 .part-one {
-    height: 60vh;
+   height: 50vh;
     background-image: url(/images/cropped\ distant\ carnival.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -78,7 +78,7 @@ body {
     background-color: rgba(0, 128, 0, 0.384);
     margin: 100px;
     border-radius: 10px;
-
+margin: auto;
 }
 
 .image {
@@ -87,7 +87,7 @@ body {
 }
 
 .part-two {
-    height: 60vh;
+   
     background-image: url(./images/duo-cropped-carnival-horses.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -99,21 +99,21 @@ body {
 }
 
 .part-three {
-    text-align: center;
-    height: 650px;
-    padding: 40px;
+  
     display: grid;
-    grid-gap: 40px;
+    grid-gap: 80px;
     grid-template-columns: repeat(auto-fit, minmax(370px,1fr));
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: repeat(2, 280px);
 }
 
 .hovering-card {
    
     position: relative;
-   
+   margin: auto;
+   padding: auto;
     width: 370px;
     height: 280px;
+ 
  
 }
 
@@ -133,16 +133,17 @@ body {
 }
 
 .front {
-    background-color: red;
+   display: flex;
+   flex-direction: column;
     transform: perspective(600px) rotateY(0deg);
     color: #000;
 
 }
 
 .back {
-    color: green;
+    color: grey;
     text-align: center;
-    background-color: rgb(70, 22, 22);
+   
     transform: perspective(600px) rotateY(180deg);
     box-shadow: 10px 10px 15px solid black;
 }
@@ -158,4 +159,24 @@ body {
 
 .hovering-card:hover>.back {
     transform: perspective(600px) rotateY(0deg);
+}
+.part-four{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   
+}
+.acts{
+height: 220px;
+width: 340px;
+margin: 50px;
+}
+.act-img{
+    height: 100%;
+    width: 100%;
+}
+
+.slider{
+   
+    background-color: greenyellow;
 }
